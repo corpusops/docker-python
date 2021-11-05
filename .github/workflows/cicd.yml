@@ -65,37 +65,20 @@ jobs:
       fail-fast: false
       matrix:
         IMAGES:
-        - "library/python/2 library/python/2-alpine library/python/2-buster library/python/2-jessie library/python/2-slim library/python/2-slim-buster library/python/2-slim-jessie"
-        - "library/python/2-slim-stretch library/python/2-stretch library/python/2-wheezy library/python/2.7 library/python/2.7-alpine library/python/2.7-buster library/python/2.7-jessie"
-        - "library/python/2.7-slim library/python/2.7-slim-buster library/python/2.7-slim-jessie library/python/2.7-slim-stretch library/python/2.7-stretch library/python/2.7-wheezy library/python/3"
-        - "library/python/3-alpine library/python/3-buster library/python/3-jessie library/python/3-slim library/python/3-slim-buster library/python/3-slim-jessie library/python/3-slim-stretch"
-        - "library/python/3-stretch library/python/3-wheezy library/python/3.2 library/python/3.2-slim library/python/3.2-wheezy library/python/3.3 library/python/3.3-alpine"
-        - "library/python/3.3-jessie library/python/3.3-slim library/python/3.3-wheezy library/python/3.4 library/python/3.4-alpine library/python/3.4-jessie library/python/3.4-slim"
-        - "library/python/3.4-slim-jessie library/python/3.4-slim-stretch library/python/3.4-stretch library/python/3.4-wheezy library/python/3.5 library/python/3.5-alpine library/python/3.5-buster"
-        - "library/python/3.5-jessie library/python/3.5-slim library/python/3.5-slim-buster library/python/3.5-slim-jessie library/python/3.5-slim-stretch library/python/3.5-stretch library/python/3.6"
-        - "library/python/3.6-alpine library/python/3.6-buster library/python/3.6-jessie library/python/3.6-slim library/python/3.6-slim-buster library/python/3.6-slim-jessie library/python/3.6-slim-stretch"
-        - "library/python/3.6-stretch library/python/3.7 library/python/3.7-alpine library/python/3.7-buster library/python/3.7-slim library/python/3.7-slim-buster library/python/3.7-slim-stretch"
-        - "library/python/3.7-stretch library/python/3.8 library/python/3.8-alpine library/python/3.8-buster library/python/3.8-slim library/python/3.8-slim-buster library/python/3.9"
-        - "library/python/3.9-alpine library/python/3.9-buster library/python/3.9-slim library/python/3.9-slim-buster library/python/alpine library/python/buster library/python/jessie"
-        - "library/python/latest library/python/slim library/python/slim-buster library/python/slim-jessie library/python/slim-stretch library/python/stretch library/python/wheezy"
         - "library/python/3 library/python/2 library/python/latest library/python/3.7 library/python/3.6"
         #- "corpusops/test/a corpusops/test/b corpusops/test/c"
         # all images that werent explicitly told to be built would be built in the next batches
         # we span them onto N jobs
-        - "zleftover:1/14"
-        - "zleftover:2/14"
-        - "zleftover:3/14"
-        - "zleftover:4/14"
-        - "zleftover:5/14"
-        - "zleftover:6/14"
-        - "zleftover:7/14"
-        - "zleftover:8/14"
-        - "zleftover:9/14"
-        - "zleftover:10/14"
-        - "zleftover:11/14"
-        - "zleftover:12/14"
-        - "zleftover:13/14"
-        - "zleftover:14/14"
+        - "zleftover:1/10"
+        - "zleftover:2/10"
+        - "zleftover:3/10"
+        - "zleftover:4/10"
+        - "zleftover:5/10"
+        - "zleftover:6/10"
+        - "zleftover:7/10"
+        - "zleftover:8/10"
+        - "zleftover:9/10"
+        - "zleftover:10/10"
 on:
   push:
   workflow_dispatch:
