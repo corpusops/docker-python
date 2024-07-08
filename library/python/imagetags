@@ -7,7 +7,6 @@
 2-slim-jessie
 2-slim-stretch
 2-stretch
-2-wheezy
 2.7
 2.7-alpine
 2.7-buster
@@ -17,7 +16,6 @@
 2.7-slim-jessie
 2.7-slim-stretch
 2.7-stretch
-2.7-wheezy
 3
 3-alpine
 3-bullseye
@@ -29,15 +27,10 @@
 3-slim-jessie
 3-slim-stretch
 3-stretch
-3-wheezy
-3.2
-3.2-slim
-3.2-wheezy
 3.3
 3.3-alpine
 3.3-jessie
 3.3-slim
-3.3-wheezy
 3.4
 3.4-alpine
 3.4-jessie
@@ -45,7 +38,6 @@
 3.4-slim-jessie
 3.4-slim-stretch
 3.4-stretch
-3.4-wheezy
 3.5
 3.5-alpine
 3.5-buster
@@ -114,4 +106,3 @@ slim-buster
 slim-jessie
 slim-stretch
 stretch
-wheezy
