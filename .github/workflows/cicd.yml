@@ -65,7 +65,11 @@ jobs:
       fail-fast: false
       matrix:
         IMAGES:
-        - "library/python/3 library/python/2 library/python/latest library/python/3.7 library/python/3.6"
+        - "library/python/3 library/python/slim library/python/latest"
+        - "library/python/3.12-alpine library/python/3.12-slim library/python/3.12"
+        - "library/python/3.11-alpine library/python/3.11-slim library/python/3.11"
+        - "library/python/3.10-alpine library/python/3.10-slim library/python/3.10"
+        - "library/python/2 library/python/2-alpine library/python/3.6-slim library/python/3.6"
         #- "corpusops/test/a corpusops/test/b corpusops/test/c"
         # all images that werent explicitly told to be built would be built in the next batches
         # we span them onto N jobs
